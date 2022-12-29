@@ -1,0 +1,230 @@
+header {
+  background-color: $grey-color-800;
+
+  .s-header {
+    @include flex(row, space-between, center);
+
+    nav {
+      @include flex(row, space-between, center);
+      padding: 2.4rem 0;
+      gap: 3.2rem;
+
+      ul {
+        @include flex(row, space-between, center);
+        gap: 3.2rem;
+      }
+    }
+  }
+}
+
+.s-hero {
+  @include flex(row, space-between, center);
+  margin-top: 4.6rem;
+  margin-bottom: 6.8rem;
+
+  &__left {
+    width: 100%;
+    max-width: 64rem;
+    @include flex(column, space-between, start);
+    gap: 2rem;
+
+    & a {
+      margin-top: calc(5.6rem - 2rem);
+    }
+  }
+
+  .s-hero__img {
+    width: 48rem;
+    height: 48rem;
+    @include flex(column, center, center);
+    background-color: $grey-color-800;
+  }
+}
+
+.s-benefits {
+  @include flex(column, space-between, center);
+  background-color: $grey-color-100;
+  color: $white;
+  padding-top: 10.4rem;
+
+  .container {
+    @include flex(column, space-between, center);
+    gap: 4.8rem;
+    border-bottom: 1px solid rgba($white, 0.25);
+    padding-bottom: 12.2rem;
+
+    .s-benefits__title {
+      text-align: center;
+      margin-bottom: 4.8rem;
+
+      p {
+        color: rgba($white, 0.7);
+        margin-top: 0.8rem;
+      }
+    }
+
+    .s-benefits__content {
+      @include flex(row, space-between, center);
+      gap: 3.2rem;
+      height: 38.4rem;
+
+      .s-benefits__item {
+        @include flex(column, space-between, center);
+        height: 100%;
+        text-align: center;
+        padding: 8rem 5.8rem;
+        background-color: $grey-color-200;
+      }
+
+      .white-item {
+        background-color: $white;
+        color: $grey-color-100;
+        h3 {
+          color: $grey-color-100;
+        }
+      }
+    }
+  }
+}
+
+.s-gallery {
+  padding-top: 10.4rem;
+  padding-bottom: 12rem;
+  background-color: $grey-color-100;
+  color: $white;
+  .container {
+    @include flex(column, space-between, center);
+
+    .s-gallery__info {
+      width: 100%;
+      @include flex(row, space-between, center);
+
+      &-title {
+        @include flex(column, space-between, start);
+        gap: 0.8rem;
+        max-width: 59.2rem;
+
+        p {
+          color: rgba($white, 0.7);
+        }
+      }
+
+      // Button CTA re-style
+      .btn {
+        padding: 2rem 4rem;
+      }
+    }
+
+    .s-gallery__images {
+      ul {
+        @include flex(row, space-between, start);
+        flex-wrap: wrap;
+        gap: 3.2rem;
+        margin-top: 5.6rem;
+      }
+    }
+  }
+}
+
+.s-message {
+  background-color: $grey-color-200;
+  color: $white;
+  .container {
+    width: 100%;
+    padding: 15.2rem 0;
+    @include flex(column, space-between, center);
+    gap: 4rem;
+    max-width: 69.4rem;
+    text-align: center;
+
+    p {
+      color: rgba($white, 0.7);
+      margin-top: -2rem;
+    }
+  }
+}
+
+footer {
+  background-color: $grey-color-100;
+  color: $white;
+  padding-top: 8.8rem;
+
+  .container {
+    @include flex(column, space-between, start);
+
+    a {
+      color: $white;
+    }
+
+    .footer-s-links {
+      width: 100%;
+      @include flex(row, space-between, start);
+      border-bottom: 1px solid rgba($white, 0.25);
+      padding-bottom: 7.2rem;
+      // Footer links containers
+      .footer-about {
+        @include flex(column, space-between, start);
+        gap: 3.5rem;
+        max-width: 28.1rem;
+      }
+
+      .footer-page-list {
+        @include flex(column, space-between, start);
+        max-width: 11.8rem;
+        gap: 2.4rem;
+        ul {
+          @include flex(column, space-between, start);
+          gap: 3.2rem;
+        }
+      }
+
+      .footer-solutions {
+        @include flex(column, space-between, start);
+        max-width: 11.8rem;
+        gap: 2.4rem;
+
+        ul {
+          @include flex(column, space-between, start);
+          gap: 3.2rem;
+        }
+      }
+
+      .footer-social {
+        max-width: 15.3rem;
+        @include flex(column, space-between, start);
+        gap: 2.4rem;
+
+        ul {
+          @include flex(column, space-between, start);
+          gap: 3.2rem;
+
+          li {
+            @include flex(row, space-between, center);
+            gap: 0.8rem;
+          }
+        }
+      }
+    }
+
+    .footer-copy {
+      width: 100%;
+      @include flex(row, space-between, center);
+      padding: 4rem 0;
+      font-size: 1.4rem;
+
+      span {
+        font-weight: 600;
+      }
+
+      .group-codebost {
+        span {
+          width: 12.2rem;
+          @include flex(row, space-between, center);
+          gap: 0.8rem;
+          font-weight: 400;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

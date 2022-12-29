@@ -1,0 +1,19 @@
+// Brand colors
+$brand-color-pink: #f67acb;
+$white: #fff;
+
+// Grey colors
+$grey-color-100: #050110;
+$grey-color-200: #1c1d1f;
+$grey-color-300: #393c40;
+$grey-color-400: #5c6066;
+$grey-color-500: #e6ebf2;
+$grey-color-800: #f7f8fa;
+
+// Mixins
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
